@@ -4,7 +4,7 @@ defmodule Leela.Endpoint do
   # Serve at "/" the given assets from "priv/static" directory
   plug Plug.Static,
     at: "/", from: :leela,
-    only: ~w(css images js favicon.ico robots.txt)
+    only: ~w(css images js favicon.ico robots.txt vendor)
 
   plug Plug.Logger
 
