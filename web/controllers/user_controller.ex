@@ -8,7 +8,10 @@ defmodule Leela.UserController do
 
   def index(conn, _params) do
     users = Repo.all(User)
-    render conn, "index.html", users: users
+    render conn, "index.html",
+		users: users,
+		page_title: "List of users",
+		sub_title: "Hello"
   end
 
   def new(conn, _params) do

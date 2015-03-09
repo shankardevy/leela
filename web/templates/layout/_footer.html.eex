@@ -1,0 +1,9 @@
+<!-- Main Footer -->
+<footer class="main-footer">
+  <!-- To the right -->
+  <div class="pull-right hidden-xs">
+    <strong><a href="http://www.opendrops.com">Opendrops</a></strong>
+  </div>
+  <!-- Default to the left -->
+  Humbly built on Elixir and Phoenix. <a href="https://github.com/shankardevy/leela">Download</a>	
+</footer>

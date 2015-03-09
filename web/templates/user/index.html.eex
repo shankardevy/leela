@@ -1,6 +1,4 @@
-<h2>Listing users</h2>
-
-<table>
+<table class="table">
   <tr>
     <th>Email</th>
     <th>Firstname</th>
