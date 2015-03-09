@@ -1,0 +1,37 @@
+<h2>Show user</h2>
+
+<ul>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @user.email %>
+  </li>
+
+  <li>
+    <strong>Firstname:</strong>
+    <%= @user.firstname %>
+  </li>
+
+  <li>
+    <strong>Lastname:</strong>
+    <%= @user.lastname %>
+  </li>
+
+  <li>
+    <strong>Timezone:</strong>
+    <%= @user.timezone %>
+  </li>
+
+  <li>
+    <strong>TimezoneUtcOffset:</strong>
+    <%= @user.timezone_utc_offset %>
+  </li>
+
+  <li>
+    <strong>JobTitle:</strong>
+    <%= @user.job_title %>
+  </li>
+
+</ul>
+
+<%= link "Back", to: user_path(@conn, :index) %>

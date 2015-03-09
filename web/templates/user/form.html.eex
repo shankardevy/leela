@@ -1,0 +1,51 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.errors != [] do %>
+    <p style="color: red">Oops, something went wrong!</p>
+  <% end %>
+
+  <p>
+    <label>
+      <span>Email:</span>
+      <%= text_input f, :email %>
+    </label>
+  </p>
+
+  <p>
+    <label>
+      <span>Firstname:</span>
+      <%= text_input f, :firstname %>
+    </label>
+  </p>
+
+  <p>
+    <label>
+      <span>Lastname:</span>
+      <%= text_input f, :lastname %>
+    </label>
+  </p>
+
+  <p>
+    <label>
+      <span>Timezone:</span>
+      <%= text_input f, :timezone %>
+    </label>
+  </p>
+
+  <p>
+    <label>
+      <span>TimezoneUtcOffset:</span>
+      <%= number_input f, :timezone_utc_offset %>
+    </label>
+  </p>
+
+  <p>
+    <label>
+      <span>JobTitle:</span>
+      <%= text_input f, :job_title %>
+    </label>
+  </p>
+
+  <p>
+    <%= submit "Submit" %>
+  </p>
+<% end %>

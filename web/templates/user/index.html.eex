@@ -1,0 +1,32 @@
+<h2>Listing users</h2>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Timezone</th>
+    <th>TimezoneUtcOffset</th>
+    <th>JobTitle</th>
+
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<%= for user <- @users do %>
+  <tr>
+    <td><%= user.email %></td>
+    <td><%= user.firstname %></td>
+    <td><%= user.lastname %></td>
+    <td><%= user.timezone %></td>
+    <td><%= user.timezone_utc_offset %></td>
+    <td><%= user.job_title %></td>
+
+    <td><%= link "Show", to: user_path(@conn, :show, user) %></td>
+    <td><%= link "Edit", to: user_path(@conn, :edit, user) %></td>
+    <td><%= link "Delete", to: user_path(@conn, :delete, user), method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link "New user", to: user_path(@conn, :new) %>
