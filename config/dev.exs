@@ -30,6 +30,6 @@ config :logger, :console, format: "[$level] $message\n"
 # Configure your database
 config :leela, Leela.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "shankardevy",
+  password: "",
   database: "leela_dev"
